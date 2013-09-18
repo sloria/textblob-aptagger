@@ -1,0 +1,2 @@
+include *.rst LICENSE *.txt *.ini setup.cfg
+include textblob_aptagger/*.pickle

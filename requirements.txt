@@ -1,0 +1,2 @@
+# Dev version of textblob
+git+https://github.com/sloria/TextBlob.git@dev
