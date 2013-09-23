@@ -8,6 +8,13 @@ Implementation by Matthew Honnibal, a.k.a. `syllog1sm <https://github.com/syllog
 
 **NOTE**: The PerceptronTagger became a part of TextBlob core as of version 0.6.3 but will be deprecated in favor of this extension in version 0.7.0. TextBlob's extension system is in its experimental stages, as is this extension.
 
+Install
+-------
+
+If you have `pip <http://www.pip-installer.org/>`_ installed (you should), run ::
+
+    $ pip install textblob-fr
+
 Usage
 -----
 .. code-block:: python
