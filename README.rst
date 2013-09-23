@@ -2,6 +2,10 @@
 textblob-aptagger
 =================
 
+.. image:: https://travis-ci.org/sloria/textblob-aptagger.png?branch=master
+    :target: https://travis-ci.org/sloria/textblob-aptagger
+    :alt: Travis-CI
+
 A fast and accurate part-of-speech tagger based on the Averaged Perceptron. For use with `TextBlob`_.
 
 Implementation by Matthew Honnibal, a.k.a. `syllog1sm <https://github.com/syllog1sm/>`_. Read more about it `here <http://honnibal.wordpress.com/2013/09/11/a-good-part-of-speechpos-tagger-in-about-200-lines-of-python/>`_.
@@ -13,7 +17,7 @@ Install
 
 If you have `pip <http://www.pip-installer.org/>`_ installed (you should), run ::
 
-    $ pip install textblob-fr
+    $ pip install textblob-aptagger
 
 Usage
 -----

@@ -11,5 +11,6 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install -U .
+  - curl https://raw.github.com/sloria/TextBlob/master/download_corpora_lite.py | python
 
 script: python run_tests.py

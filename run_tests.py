@@ -14,7 +14,7 @@ Skip slow tests: ::
 from __future__ import unicode_literals
 import nose
 import sys
-from textblob_fr.compat import PY2, PY26
+from textblob_aptagger.compat import PY2, PY26
 
 
 def main():
