@@ -47,7 +47,7 @@ def read(fname):
 setup(
     name='textblob-aptagger',
     version=textblob_aptagger.__version__,
-    description='A fast and accurate POS tagger for TextBlob.',
+    description='A fast and accurate part-of-speech tagger for TextBlob.',
     long_description=(read("README.rst") + '\n\n' +
                         read("HISTORY.rst")),
     author='Steven Loria',

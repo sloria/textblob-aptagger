@@ -17,6 +17,7 @@ Install
 
 If you have `pip <http://www.pip-installer.org/>`_ installed (you should), run ::
 
+    $ pip install -U git+https://github.com/sloria/TextBlob.git@dev
     $ pip install textblob-aptagger
 
 Usage
