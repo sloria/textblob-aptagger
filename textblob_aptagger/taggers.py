@@ -14,6 +14,7 @@ from textblob_aptagger._perceptron import AveragedPerceptron
 
 PICKLE = "trontagger-0.1.0.pickle"
 
+
 class PerceptronTagger(BaseTagger):
 
     '''Greedy Averaged Perceptron tagger, as implemented by Matthew Honnibal.
