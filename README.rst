@@ -2,6 +2,10 @@
 textblob-aptagger
 =================
 
+.. image:: https://badge.fury.io/py/textblob-aptagger.png
+    :target: http://badge.fury.io/py/textblob-aptagger
+    :alt: Latest version
+
 .. image:: https://travis-ci.org/sloria/textblob-aptagger.png?branch=master
     :target: https://travis-ci.org/sloria/textblob-aptagger
     :alt: Travis-CI
@@ -10,15 +14,12 @@ A fast and accurate part-of-speech tagger based on the Averaged Perceptron. For 
 
 Implementation by Matthew Honnibal, a.k.a. `syllog1sm <https://github.com/syllog1sm/>`_. Read more about it `here <http://honnibal.wordpress.com/2013/09/11/a-good-part-of-speechpos-tagger-in-about-200-lines-of-python/>`_.
 
-**NOTE**: The PerceptronTagger became a part of TextBlob core as of version 0.6.3 but will be deprecated in favor of this extension in version 0.7.0. TextBlob's extension system is in its experimental stages, as is this extension.
-
 Install
 -------
 
 If you have `pip <http://www.pip-installer.org/>`_ installed (you should), run ::
 
-    $ pip install -U git+https://github.com/sloria/TextBlob.git@dev
-    $ pip install textblob-aptagger
+    $ pip install -U textblob textblob-aptagger
 
 Usage
 -----

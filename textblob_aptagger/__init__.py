@@ -7,5 +7,5 @@ part-of-speech tagger based on the Averaged Perceptron algorithm.
 from __future__ import absolute_import
 from textblob_aptagger.taggers import PerceptronTagger
 
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 __license__ = "MIT"
