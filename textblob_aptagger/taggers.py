@@ -6,10 +6,9 @@ from collections import defaultdict
 import pickle
 import logging
 
-import text
-from text.base import BaseTagger
-from text.packages import nltk
-from text.exceptions import MissingCorpusException
+from textblob.base import BaseTagger
+from textblob.packages import nltk
+from textblob.exceptions import MissingCorpusException
 from textblob_aptagger._perceptron import AveragedPerceptron
 
 PICKLE = "trontagger-0.1.0.pickle"
@@ -100,7 +99,6 @@ class PerceptronTagger(BaseTagger):
         try:
             w_td_c = pickle.load(open(loc, 'rb'))
         except IOError:
-            package_dir = text.PACKAGE_DIR
             msg = ("Missing trontagger.pickle file.")
             raise MissingCorpusException(msg)
         self.model.weights, self.tagdict, self.classes = w_td_c

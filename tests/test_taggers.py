@@ -4,9 +4,9 @@ import unittest
 from nose.tools import *  # PEP8 asserts
 from nose.plugins.attrib import attr
 
-from text.base import BaseTagger
-from text.blob import TextBlob
-from text.exceptions import MissingCorpusException
+from textblob.base import BaseTagger
+from textblob.blob import TextBlob
+from textblob.exceptions import MissingCorpusException
 from textblob_aptagger import PerceptronTagger
 
 class TestPerceptronTagger(unittest.TestCase):
