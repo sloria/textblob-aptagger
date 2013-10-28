@@ -19,13 +19,13 @@ Install
 
 If you have `pip <http://www.pip-installer.org/>`_ installed (you should), run ::
 
-    $ pip install -U textblob textblob-aptagger
+    $ pip install -U textblob-aptagger
 
 Usage
 -----
 .. code-block:: python
 
-    >>> from text.blob import TextBlob
+    >>> from textblob import TextBlob
     >>> from textblob_aptagger import PerceptronTagger
     >>> blob = TextBlob("Simple is better than complex.", pos_tagger=PerceptronTagger())
     >>> blob.tags
