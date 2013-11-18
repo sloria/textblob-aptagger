@@ -68,11 +68,11 @@ class PerceptronTagger(BaseTagger):
         '''
         self._make_tagdict(sentences)
         self.model.classes = self.classes
-        prev, prev2 = self.START
         for iter_ in range(nr_iter):
             c = 0
             n = 0
             for words, tags in sentences:
+                prev, prev2 = self.START
                 context = self.START + [self._normalize(w) for w in words] \
                                                                     + self.END
                 for i, word in enumerate(words):
