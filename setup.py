@@ -5,7 +5,7 @@ import subprocess
 from setuptools import setup
 
 packages = ['textblob_aptagger']
-requires = ["textblob>=0.8.0"]
+requires = ["textblob>=0.9.0"]
 
 PUBLISH_CMD = "python setup.py register sdist bdist_wheel upload"
 TEST_PUBLISH_CMD = 'python setup.py register -r test sdist bdist_wheel upload -r test'

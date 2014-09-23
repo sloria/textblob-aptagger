@@ -7,8 +7,8 @@ import pickle
 import logging
 
 from textblob.base import BaseTagger
-from textblob.packages import nltk
-from textblob.exceptions import MissingCorpusException
+from textblob.tokenizers import WordTokenizer, SentenceTokenizer
+from textblob.exceptions import MissingCorpusError
 from textblob_aptagger._perceptron import AveragedPerceptron
 
 PICKLE = "trontagger-0.1.0.pickle"
@@ -38,8 +38,8 @@ class PerceptronTagger(BaseTagger):
     def tag(self, corpus, tokenize=True):
         '''Tags a string `corpus`.'''
         # Assume untokenized corpus has \n between sentences and ' ' between words
-        s_split = nltk.sent_tokenize if tokenize else lambda t: t.split('\n')
-        w_split = nltk.word_tokenize if tokenize else lambda s: s.split()
+        s_split = SentenceTokenizer().tokenize if tokenize else lambda t: t.split('\n')
+        w_split = WordTokenizer().tokenize if tokenize else lambda s: s.split()
         def split_sents(corpus):
             for s in s_split(corpus):
                 yield w_split(s)
@@ -100,7 +100,7 @@ class PerceptronTagger(BaseTagger):
             w_td_c = pickle.load(open(loc, 'rb'))
         except IOError:
             msg = ("Missing trontagger.pickle file.")
-            raise MissingCorpusException(msg)
+            raise MissingCorpusError(msg)
         self.model.weights, self.tagdict, self.classes = w_td_c
         self.model.classes = self.classes
         return None

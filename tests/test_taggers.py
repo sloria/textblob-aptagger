@@ -6,7 +6,7 @@ from nose.plugins.attrib import attr
 
 from textblob.base import BaseTagger
 from textblob.blob import TextBlob
-from textblob.exceptions import MissingCorpusException
+from textblob.exceptions import MissingCorpusError
 from textblob_aptagger import PerceptronTagger
 
 class TestPerceptronTagger(unittest.TestCase):
@@ -54,7 +54,7 @@ class TestPerceptronTagger(unittest.TestCase):
 
     def test_loading_missing_file_raises_missing_corpus_exception(self):
         tagger = PerceptronTagger(load=False)
-        assert_raises(MissingCorpusException, tagger.load, 'missing.pickle')
+        assert_raises(MissingCorpusError, tagger.load, 'missing.pickle')
 
 
 def _read_tagged(text, sep='|'):
