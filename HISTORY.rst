@@ -1,7 +1,7 @@
 Changelog
 ---------
 
-0.3.0 (09/15/2014)
+0.3.0 (unreleased)
 ++++++++++++++++++
 
 * Compatibility with Textblob>=0.9.0.
