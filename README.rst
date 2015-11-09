@@ -2,6 +2,8 @@
 textblob-aptagger
 =================
 
+**As of TextBlob 0.11.0, TextBlob uses NLTK's averaged perceptron tagger by default. This package is no longer necessary.**
+
 .. image:: https://badge.fury.io/py/textblob-aptagger.png
     :target: http://badge.fury.io/py/textblob-aptagger
     :alt: Latest version
